@@ -14,14 +14,14 @@ const hero = () => {
             <h2 className="text-3xl text-center tracking-normal mt-6">
             Nice to meet you! I’m <span className="relative">
             Adam Keyes
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-green-400"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-purple-700"></span>
             </span>. 
             </h2>
             <p className="mt-6 text-center text-base w-mobile-w">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
 
             <span className="relative tracking-widest mt-6">
             CONTACT ME
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-green-400"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-purple-700"></span>
             </span>
         </div>
     </div>
