@@ -1,4 +1,4 @@
-
+import Home from './pages/home'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1 className='text-xl font-bold text-red-500'>Testing</h1>
+      <Home/>
     </>
   )
 }
