@@ -10,6 +10,10 @@ export default {
 			width: {
 				'mobile-w': '343px',
 			},
+
+			height: {
+				'tab-h': '528px',
+			},
 		},
 	},
 	plugins: [],

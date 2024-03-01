@@ -61,7 +61,7 @@ const ContactForm = () => {
       <hr className="w-80 h-0.5 mt-20 md:w-10/12" />
 
       <div className='mt-10 mb-10 md:flex justify-between w-10/12'>
-      <h1 className="font-bold text-2xl">adamkeyes</h1>
+      <h1 className="font-bold text-2xl">kofiakyea</h1>
       
         <div className="w-40 items-center justify-center">
 

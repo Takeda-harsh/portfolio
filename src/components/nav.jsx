@@ -5,8 +5,11 @@ import { FaTwitter } from "react-icons/fa";
 
 const nav = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="mt-6 font-bold text-2xl">adamkeyes</h1>
+    <div className="flex flex-col items-center justify-center md:flex">
+      <div className="md:flex md:flex-row md:justify-between md:w-10/12 md:items-center">
+
+      
+      <h1 className="mt-6 font-bold text-2xl">kofiakyea</h1>
       
         <div className="w-40 items-center justify-center">
 
@@ -18,6 +21,7 @@ const nav = () => {
         <FaTwitter />
         </div>
         
+      </div>
       </div>
       </div>
     
