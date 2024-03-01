@@ -26,7 +26,7 @@ const portfolio = () => {
             VIEW PROJECT
             <span className="absolute bottom-0 left-0 w-full h-1 bg-purple-700"></span>
             </span></a>
-        <a href={project.view_code} className="text-white-500 hover:underline"><span className="relative tracking-widest">
+        <a href={project.view_code} target='blank' className="text-white-500 hover:underline"><span className="relative tracking-widest">
             VIEW CODE
             <span className="absolute bottom-0 left-0 w-full h-1 bg-purple-700 "></span>
             </span></a>

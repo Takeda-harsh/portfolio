@@ -15,10 +15,10 @@ const nav = () => {
 
       
       <div className="w-40 flex flex-row mt-4 justify-evenly">
-        <FaGithub />
-        <SiFrontendmentor />
-        <FaLinkedin />
-        <FaTwitter />
+        <a href="https://github.com/Takeda-harsh" target="blank"><FaGithub /></a>
+        <a href="#"><SiFrontendmentor /></a>
+        <a href="https://www.linkedin.com/in/kofi-akyea/" target="blank"><FaLinkedin /></a>
+        <a href="https://x.com/kaytech_?s=09" target="blank"><FaTwitter /></a>
         </div>
         
       </div>

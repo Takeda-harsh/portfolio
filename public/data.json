@@ -2,35 +2,35 @@
     {
       "id": 1,
       "image": "/project-images/martital.png",
-      "title": "MARTITAL",
+      "title": "MATITAL",
       "frameworks_used": ["WORDPRESS", "CSS"],
-      "view_project": "https://martital.com",
-      "view_code": "https://martital.com"
+      "view_project": "https://matital.com",
+      "view_code": "https://matital.com"
     },
     {
       "id": 2,
-      "image": "/project-images/martital.png",
+      "image": "/project-images/quotegenerator.png",
       "title": "QUOTE GENERATOR",
       "frameworks_used": ["HTML", "CSS", "JAVASCRIPT"],
-      "view_project": "https://example.com/project2",
+      "view_project": "https://takedaquotegenerator.netlify.app/",
       "view_code": "https://github.com/Takeda-harsh/Quote-Generator"
     },
     {
       "id": 3,
-      "image": "/project-images/martital.png",
-      "title": "Portfolio Website",
-      "frameworks_used": ["Vue.js", "Vuetify", "Firebase"],
-      "view_project": "https://example.com/project3",
-      "view_code": "https://github.com/username/project3"
+      "image": "/project-images/airstate.png",
+      "title": "AIRSTATE GHANA",
+      "frameworks_used": ["WEBFLOW", "CSS"],
+      "view_project": "https://www.airstatedevelopment.com/",
+      "view_code": "https://www.airstatedevelopment.com/"
     }
     ,
     {
       "id": 4,
-      "image": "/project-images/martital.png",
+      "image": "/project-images/modifi.png",
       "title": "MODIFI",
-      "frameworks_used": ["Vue.js", "Vuetify", "Firebase"],
-      "view_project": "https://example.com/project3",
-      "view_code": "https://github.com/username/project3"
+      "frameworks_used": ["WORDPRESS", "CSS"],
+      "view_project": "https://modifi-studio.com/",
+      "view_code": "https://modifi-studio.com/"
     }
     ,
     {
@@ -58,6 +58,16 @@
       "frameworks_used": ["Vue.js", "Vuetify", "Firebase"],
       "view_project": "https://example.com/project3",
       "view_code": "https://github.com/username/project3"
+    }
+
+    ,
+    {
+      "id": 8,
+      "image": "/project-images/countriesapp.png",
+      "title": "COUNTRIES APP",
+      "frameworks_used": ["REACT.JS", "CSS", "REST API"],
+      "view_project": "https://dainty-selkie-75a161.netlify.app/",
+      "view_code": "https://github.com/Takeda-harsh/country-app"
     }
   ]
   
