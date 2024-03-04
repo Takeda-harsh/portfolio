@@ -33,7 +33,7 @@ const ContactForm = () => {
 
   return (
     <div className='bg-gray-900 mt-10 flex flex-col justify-center items-center'>
-      <div className="bg-gray-900 pt-20 flex flex-col justify-center md:flex-row md:w-10/12">
+      <div className="bg-gray-900 pt-20 flex flex-col justify-center md:flex-row md:w-11/12">
         <div className="md:w-9/12 p-6 text-white">
           <p className="text-2xl font-bold md:text-6xl">Contact</p>
           <p className="mt-4">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
@@ -57,20 +57,20 @@ const ContactForm = () => {
         </form>
       </div>
 
-      <div className="bg-gray-900 flex flex-col items-center justify-center md:w-10/12">
-      <hr className="w-80 h-0.5 mt-20 md:w-10/12" />
+      <div className="bg-gray-900 flex flex-col items-center justify-center md:w-10/12 lg:w-11/12">
+      <hr className="w-80 h-0.5 mt-20 md:w-11/12 lg:w-12/12" />
 
-      <div className='mt-10 mb-10 md:flex justify-between w-10/12'>
+      <div className='mt-10 mb-10 md:flex justify-between w-11/12'>
       <h1 className="font-bold text-2xl">kofiakyea</h1>
       
         <div className="w-40 items-center justify-center">
 
       
       <div className="w-40 flex flex-row mt-4 justify-evenly">
-        <FaGithub />
-        <SiFrontendmentor />
-        <FaLinkedin />
-        <FaTwitter />
+      <a href="https://github.com/Takeda-harsh" target="blank"><FaGithub /></a>
+        <a href="https://www.frontendmentor.io/profile/Takeda-harsh"><SiFrontendmentor /></a>
+        <a href="https://www.linkedin.com/in/kofi-akyea/" target="blank"><FaLinkedin /></a>
+        <a href="https://x.com/kaytech_?s=09" target="blank"><FaTwitter /></a>
         </div>
         </div>
       </div>

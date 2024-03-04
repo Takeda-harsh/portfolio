@@ -3,8 +3,8 @@ import projectsData from '/public/data.json'
 const portfolio = () => {
   return (
     <>
-    <div className=' mt-10 w-mobile-m flex items-center justify-center md:mt-24'>
-      <div className='w-80 flex justify-between md:w-10/12'>
+    <div className=' mt-10 w-mobile-m flex items-center justify-center md:mt-24 lg:px-10'>
+      <div className='w-80 flex justify-between md:w-11/12 lg:10/12'>
         <p className='text-3xl font-bold'>Projects</p>
         <span className="relative tracking-widest">
             CONTACT ME
@@ -13,7 +13,7 @@ const portfolio = () => {
         </div>
     </div>
 
-<div className="container mx-auto mt-6 md:w-10/12 items-center justify-center">
+<div className="container mx-auto mt-6 md:w-11/12 items-center justify-center">
 
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
   {projectsData.map((project) => (
