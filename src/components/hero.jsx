@@ -7,10 +7,10 @@ const hero = () => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center md:flex-row-reverse">
-      <img src="../public/profile.png" className="w-44 h-64 mt-8 md:w-80 md:h-tab-h lg:w-96"/>
+      <img src="../profile.png" className="w-44 h-64 mt-8 md:w-80 md:h-tab-h lg:w-96"/>
       <div className="flex flex-row w-screen justify-between absolute h-64 top-15">
-        <img src="../public/background-sphere-m.png" className="w-48 h-32"/>
-        <img src="../public/Oval.png" className="mt-20 w-14 h-32" />
+        <img src="../background-sphere-m.png" className="w-48 h-32"/>
+        <img src="../Oval.png" className="mt-20 w-14 h-32" />
       </div>
       
         <div className="flex flex-col items-center justify-center md:text-left md:items-start md:w-2/4">
