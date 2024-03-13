@@ -23,11 +23,11 @@ const handleSubmit = (e) => {
     axios.post('send_email.php', formData)
         .then(response => {
             console.log(response.data);
-            // Handle success or error response
+            
         })
         .catch(error => {
             console.error('Error sending form data:', error);
-            // Handle error
+            
         });
 };
   return (
