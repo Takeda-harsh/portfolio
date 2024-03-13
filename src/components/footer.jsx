@@ -3,34 +3,33 @@ import { FaGithub } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import axios from 'axios';
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
-  });
+});
 
-  const handleChange = (e) => {
+const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
+    setFormData({ ...formData, [name]: value });
+};
 
-  const handleSubmit = (e) => {
+const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, message } = formData;
-    window.location.href = `mailto:kakyea13@gmail.com?subject=Message from ${name} (${email})&body=${message}`;
-    console.log(formData);
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
-  };
-
+    axios.post('send_email.php', formData)
+        .then(response => {
+            console.log(response.data);
+            // Handle success or error response
+        })
+        .catch(error => {
+            console.error('Error sending form data:', error);
+            // Handle error
+        });
+};
   return (
     <div className='bg-gray-900 mt-10 flex flex-col justify-center items-center'>
       <div className="bg-gray-900 pt-20 flex flex-col justify-center md:flex-row md:w-11/12">
