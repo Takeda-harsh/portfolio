@@ -1,12 +1,15 @@
 import projectsData from '/public/data.json'
 
 const portfolio = () => {
+  const handleContactClick = () => {
+    window.open('mailto:kakyea13@gmail.com');
+  };
   return (
     <>
     <div className=' mt-10 w-mobile-m flex items-center justify-center md:mt-24 lg:px-10'>
       <div className='w-80 flex justify-between md:w-11/12 lg:10/12'>
         <p className='text-3xl font-bold'>Projects</p>
-        <span className="relative tracking-widest">
+        <span className="relative tracking-widest" onClick={handleContactClick} style={{ cursor: 'pointer' }}>
             CONTACT ME
             <span className="absolute bottom-0 left-0 w-full h-1 bg-purple-700"></span>
             </span>
