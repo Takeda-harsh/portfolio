@@ -18,17 +18,22 @@ const handleChange = (e) => {
     setFormData({ ...formData, [name]: value });
 };
 
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
-    axios.post('send_email.php', formData)
-        .then(response => {
-            console.log(response.data);
-            
-        })
-        .catch(error => {
-            console.error('Error sending form data:', error);
-            
+
+    try {
+        await axios.post('/send_email.php', formData);
+        alert('Thank you for reaching out!');
+        
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
         });
+    } catch (error) {
+        console.error('Error sending email:', error);
+        alert('Failed to send email. Please try again later.');
+    }
 };
   return (
     <div className='bg-gray-900 mt-10 flex flex-col justify-center items-center'>
@@ -39,16 +44,16 @@ const handleSubmit = (e) => {
         </div>
         <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto mt-6 md:mt-0 px-4 md:w-10/12">
           <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-200 font-bold mb-2">Name</label>
-            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-900  text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+            <label htmlFor="name" className="block text-gray-200 font-bold mb-2 ">Name</label>
+            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-900  text-white-700 leading-tight focus:outline-none focus:shadow-outline" required />
           </div>
           <div className="mb-4">
             <label htmlFor="email" className="block text-gray-200 font-bold mb-2">Email</label>
-            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-900 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-900 text-white-700 leading-tight focus:outline-none focus:shadow-outline" required />
           </div>
           <div className="mb-4">
             <label htmlFor="message" className="block text-gray-200 font-bold mb-2">Message</label>
-            <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="4" className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-900 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+            <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="4" className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-900 text-white-700 leading-tight focus:outline-none focus:shadow-outline" required />
           </div>
           <div className="flex justify-end">
             <button type="submit" className=" hover:text-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline relative">SEND MESSAGE <span className="absolute bottom-0 left-0 w-full h-1 bg-purple-700"></span></button>
