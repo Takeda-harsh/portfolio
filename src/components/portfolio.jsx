@@ -25,11 +25,11 @@ const portfolio = () => {
       <h2 className="text-2xl font-semibold mb-3 mt-3">{project.title}</h2>
       <p className="text-grey-500 mb-5">{project.frameworks_used.join('       ')}</p>
       <div className="flex justify-between">
-        <a href={project.view_project} className="text-white-500 hover:underline"> <span className="relative tracking-widest">
+        <a href={project.view_project} target='_blank' className="text-white-500 hover:underline"> <span className="relative tracking-widest">
             VIEW PROJECT
             <span className="absolute bottom-0 left-0 w-full h-1 bg-purple-700"></span>
             </span></a>
-        <a href={project.view_code} target='blank' className="text-white-500 hover:underline"><span className="relative tracking-widest">
+        <a href={project.view_code} target='_blank' className="text-white-500 hover:underline"><span className="relative tracking-widest">
             VIEW CODE
             <span className="absolute bottom-0 left-0 w-full h-1 bg-purple-700 "></span>
             </span></a>

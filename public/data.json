@@ -68,6 +68,15 @@
       "view_project": "https://futureleadersgh.com/",
       "view_code": "https://futureleadersgh.com/"
     }
+    ,
+    {
+      "id": 7,
+      "image": "/project-images/RS-portfolio.png",
+      "title": "RESEARCH SOLUTIONS GHANA",
+      "frameworks_used": ["WORDPRESS", "CSS", "JAVASCRIPT"],
+      "view_project": "https://researchsolutionsgh.com/",
+      "view_code": "https://researchsolutionsgh.com/"
+    }
 
    
   ]
